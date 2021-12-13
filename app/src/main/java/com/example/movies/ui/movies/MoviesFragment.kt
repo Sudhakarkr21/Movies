@@ -39,9 +39,6 @@ class MoviesFragment : BaseFragment<MoviesFragmentBinding, MoviesViewModel>(),
 
     override fun bindVM(binding: MoviesFragmentBinding, vm: MoviesViewModel) =
         with(binding) {
-
-
-
             with(mainViewPager) {
                 adapter = imageSliderAdapter
                 clipToPadding = false

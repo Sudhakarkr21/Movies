@@ -13,7 +13,9 @@
     <com.google.android.material.card.MaterialCardView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        app:cardElevation="4dp"
+        app:cardElevation="5dp"
+        android:outlineAmbientShadowColor="@color/black"
+        android:outlineSpotShadowColor="@color/black"
         app:cardUseCompatPadding="true">
 
         <androidx.constraintlayout.widget.ConstraintLayout
@@ -23,7 +25,7 @@
             <ImageView
                 android:id="@+id/iv_avatar"
                 android:layout_width="0dp"
-                android:layout_height="0dp"
+                android:layout_height="180dp"
                 android:scaleType="fitXY"
                 imageUrl="@{tvshow.imageThumbnailPath}"
                 app:layout_constraintBottom_toBottomOf="parent"
