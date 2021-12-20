@@ -63,7 +63,7 @@ class MoviesFragment : BaseFragment<MoviesFragmentBinding, MoviesViewModel>(),
                     footer = PagingLoadStateAdapter(this)
                 )
 
-                swipeRefresh.setOnRefreshListener { refresh() }
+               // swipeRefresh.setOnRefreshListener { refresh() }
                 characterClickListener = this@MoviesFragment
 
                 with(vm) {
@@ -75,11 +75,11 @@ class MoviesFragment : BaseFragment<MoviesFragmentBinding, MoviesViewModel>(),
                     launchOnLifecycleScope {
                         charactersFlow.collectLatest { submitData(it) }
                     }
-                    launchOnLifecycleScope {
+                    /*launchOnLifecycleScope {
                         loadStateFlow.collectLatest {
                             swipeRefresh.isRefreshing = it.refresh is LoadState.Loading
                         }
-                    }
+                    }*/
 
 
                 }

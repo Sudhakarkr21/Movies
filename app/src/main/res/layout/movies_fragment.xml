@@ -3,15 +3,16 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools">
 
-    <androidx.swiperefreshlayout.widget.SwipeRefreshLayout
+   <!-- <androidx.swiperefreshlayout.widget.SwipeRefreshLayout
         android:id="@+id/swipe_refresh"
         android:layout_width="match_parent"
         android:background="@color/purple_700"
-        android:layout_height="match_parent">
+        android:layout_height="match_parent">-->
 
         <androidx.constraintlayout.motion.widget.MotionLayout
             android:id="@+id/constraintLayout2"
             android:layout_width="match_parent"
+            android:background="@color/purple_700"
             android:layout_height="match_parent"
             app:layoutDescription="@xml/movies_fragment_xml_constraintlayout2_scene">
 
@@ -24,6 +25,7 @@
                 android:fontFamily="sans-serif-black"
                 android:textColor="@color/white"
                 android:textSize="22sp"
+                android:padding="10dp"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toTopOf="parent" />
@@ -47,6 +49,7 @@
                 android:textColor="@color/white"
                 android:textSize="22sp"
                 android:layout_marginTop="10dp"
+                android:layout_marginBottom="10dp"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toBottomOf="@id/mainViewPager" />
@@ -66,5 +69,5 @@
                 tools:itemCount="20"
                 tools:listitem="@layout/item_movies" />
         </androidx.constraintlayout.motion.widget.MotionLayout>
-    </androidx.swiperefreshlayout.widget.SwipeRefreshLayout>
+   <!-- </androidx.swiperefreshlayout.widget.SwipeRefreshLayout>-->
 </layout>

@@ -30,7 +30,6 @@
             motion:layout_constraintEnd_toEndOf="parent"
             android:layout_width="match_parent"
             android:layout_height="0dp"
-            android:visibility="gone"
             motion:layout_constraintTop_toBottomOf="@id/titlt"
             motion:layout_constraintStart_toStartOf="parent" />
     </ConstraintSet>
